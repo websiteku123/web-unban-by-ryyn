@@ -1,2 +1,460 @@
-//real punya ryyn
-:root{--dark-gray:#242424;--light-gray-bg:rgba(30,30,30,.95);--whatsapp-green:#25d366;--accent-purple:#8e44ad;--text-color:#ecf0f1;--input-bg:#2d2d2d;--border-color:#3e3e3e;--gradient:linear-gradient(45deg,var(--whatsapp-green),var(--accent-purple));--dark-gradient:linear-gradient(45deg,#1e9e4d,#6c3588);--menu-bg:#1e1e1e}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background-color:var(--dark-gray);color:var(--text-color);display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:100vh;margin:0;background-image:url("https://files.catbox.moe/icrkuw.jpg");background-size:cover;background-position:center;background-attachment:fixed;position:relative}body::before{content:"";position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.3);backdrop-filter:blur(4px);z-index:0}#login-view{position:relative;z-index:10;background-color:var(--light-gray-bg);padding:40px 30px;border-radius:18px;box-shadow:0 10px 40px rgba(0,0,0,.8),0 0 20px var(--accent-purple);max-width:380px;width:90%;text-align:center;border:1px solid var(--border-color)}#login-view h2{color:var(--whatsapp-green);margin-bottom:25px;font-size:1.6em}#login-error{color:#e74c3c;margin-top:10px;font-weight:600}#login-password{width:100%;padding:12px;border:1px solid var(--border-color);border-radius:10px;background-color:var(--input-bg);color:var(--text-color);font-size:1em;box-sizing:border-box;transition:border-color .3s ease,box-shadow .3s ease;margin-bottom:20px}#login-button{width:100%;padding:12px;border:none;border-radius:10px;cursor:pointer;font-size:1.1em;font-weight:700;color:var(--text-color);background:var(--gradient);box-shadow:0 4px 15px rgba(0,0,0,.6);transition:all .3s ease;text-transform:uppercase}#login-button:hover{opacity:.9}#login-view .login-desc{margin-top:15px;font-size:.9em;color:#bdc3c7;font-style:italic}#main-view{display:none;width:100%;max-width:440px}.container{position:relative;z-index:10;background-color:var(--light-gray-bg);padding:35px 25px;border-radius:18px;box-shadow:0 10px 40px rgba(0,0,0,.8),0 0 15px rgba(142,68,173,.3);max-width:480px;width:90%;border:1px solid var(--border-color);margin-top:20px;margin-bottom:20px}.fixed-header{position:fixed;top:0;width:95%;max-width:400px;background-color:var(--menu-bg);z-index:1000;display:none;justify-content:space-between;align-items:center;padding:10px 20px;box-shadow:0 3px 10px rgba(0,0,0,.5);border-radius:0 0 10px 10px}.fixed-header h1{font-size:1.2em;color:var(--whatsapp-green);margin:0}.menu-toggle{background:none;border:none;color:var(--accent-purple);font-size:24px;cursor:pointer;transition:color .3s}.menu-toggle:hover{color:var(--whatsapp-green)}#menuContainer{position:fixed;top:50px;right:10px;width:auto;min-width:200px;background-color:var(--menu-bg);border:1px solid var(--border-color);border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.5);z-index:1001;padding:10px;display:none}.menu-button-new{display:block;width:100%;padding:12px;margin-bottom:5px;border:none;border-radius:8px;font-size:1em;font-weight:600;cursor:pointer;color:var(--text-color);background:var(--dark-gradient);transition:opacity .2s,transform .2s;text-align:center;box-shadow:0 2px 5px rgba(0,0,0,.5)}.menu-button-new:hover{opacity:.8;transform:scale(.99)}.menu-button-new i{margin-right:8px}.header-content{text-align:center;margin-bottom:25px}.icon-area{position:relative;display:inline-block;margin-bottom:15px}.main-icon{width:70px;height:70px;border-radius:50%;border:2px solid var(--accent-purple);box-shadow:0 0 15px rgba(142,68,173,.5);background-color:var(--input-bg);padding:5px}.check-icon{position:absolute;bottom:0;right:0;background-color:red;color:var(--dark-gray);border-radius:50%;padding:6px;font-size:17px;line-height:1}.title{color:var(--whatsapp-green);font-size:1.4em;font-weight:600;margin-bottom:5px}.input-group label{display:block;margin-top:15px;margin-bottom:8px;font-size:.9em;color:var(--text-color)}.input-text,.input-select{width:100%;padding:12px;border:1px solid var(--border-color);border-radius:10px;background-color:var(--input-bg);color:var(--text-color);font-size:1em;box-sizing:border-box;transition:border-color .3s ease,box-shadow .3s ease;-webkit-appearance:none;-moz-appearance:none;appearance:none}.input-text:focus,.input-select:focus{border-color:var(--accent-purple);box-shadow:0 0 8px rgba(142,68,173,.6);outline:none}.select-wrapper{position:relative}.select-wrapper::after{content:"\f078";font-family:'Font Awesome 6 Free';font-weight:900;position:absolute;top:50%;right:15px;transform:translateY(-50%);color:var(--whatsapp-green);pointer-events:none}.input-select option{background-color:var(--input-bg);color:var(--text-color)}#btnSend{width:100%;padding:14px;margin-top:30px;border:none;border-radius:12px;cursor:pointer;font-size:1.1em;font-weight:700;color:var(--text-color);background:var(--gradient);box-shadow:0 4px 15px rgba(0,0,0,.6);transition:all .3s ease;text-transform:uppercase;letter-spacing:1px;opacity:.5;pointer-events:none}#btnSend.active{opacity:1;pointer-events:auto;transform:translateY(-2px);box-shadow:0 6px 20px rgba(142,68,173,.5)}#btnSend.active:hover{opacity:.9;transform:translateY(0);box-shadow:0 4px 15px rgba(0,0,0,.6)}.modal{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.85);display:none;justify-content:center;align-items:center;z-index:2000;backdrop-filter:blur(5px)}.modal-content{background-color:var(--light-gray-bg);padding:25px;border-radius:20px;max-width:90%;width:400px;box-shadow:0 0 50px rgba(142,68,173,.7);position:relative;max-height:90vh;overflow-y:auto;border:2px solid var(--accent-purple)}.modal-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;padding-bottom:10px;border-bottom:2px solid var(--whatsapp-green)}.modal-header h2{margin:0;color:var(--whatsapp-green);font-size:1.5em;text-shadow:0 0 5px rgba(37,211,102,.5)}.close-button{background:none;border:none;color:var(--accent-purple);font-size:28px;cursor:pointer;transition:color .3s}.close-button:hover{color:var(--text-color)}.product-item{background:var(--input-bg);border-radius:15px;padding:15px;margin-bottom:15px;border:1px solid var(--border-color);display:flex;align-items:center;gap:15px;box-shadow:0 5px 15px rgba(0,0,0,.4);transition:transform .2s}.product-item:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,.4)}.product-image{width:60px;height:60px;border-radius:10px;object-fit:cover;border:2px solid var(--whatsapp-green)}.product-details{flex-grow:1}.product-name{font-weight:700;color:gold;font-size:1.1em;margin-bottom:5px}.product-price{font-weight:900;font-size:1.2em;color:white}.buy-button{padding:10px 15px;border:none;border-radius:8px;font-weight:700;color:var(--text-color);background:var(--dark-gradient);cursor:pointer;transition:opacity .2s,transform .2s;text-transform:uppercase;box-shadow:0 3px 10px rgba(0,0,0,.5)}.buy-button:hover{opacity:.8;transform:scale(.98)}
+/* Variabel Warna */
+:root {
+    --dark-gray: #242424; /* Background Abu-abu Tua */
+    --light-gray-bg: rgba(30, 30, 30, 0.95); /* Container background */
+    --whatsapp-green: #25d366; /* Hijau Aksen */
+    --accent-purple: #8e44ad; /* Ungu Aksen */
+    --text-color: #ecf0f1;
+    --input-bg: #2d2d2d;
+    --border-color: #3e3e3e;
+    --gradient: linear-gradient(45deg, var(--whatsapp-green), var(--accent-purple));
+    --dark-gradient: linear-gradient(45deg, #1e9e4d, #6c3588); /* Combo Hijau-Ungu Agak Gelap */
+    --menu-bg: #1e1e1e;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--dark-gray);
+    color: var(--text-color);
+    
+    /* PERUBAHAN UTAMA UNTUK PEMUSATAN */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; /* MEMUSATKAN KONTEN SECARA VERTIKAL */
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    /* Background Image */
+    background-image: url("https://files.catbox.moe/icrkuw.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* Overlay untuk meredupkan gambar background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    z-index: 0;
+}
+
+/* --- Tampilan Login (Card Style) --- */
+#login-view {
+    position: relative;
+    z-index: 10;
+    background-color: var(--light-gray-bg);
+    padding: 40px 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8), 0 0 20px var(--accent-purple);
+    max-width: 380px;
+    width: 90%;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+#login-view h2 {
+    color: var(--whatsapp-green);
+    margin-bottom: 25px;
+    font-size: 1.6em;
+}
+
+#login-error {
+    color: #e74c3c;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+#login-password {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+#login-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: var(--text-color);
+    background: var(--gradient);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+#login-button:hover {
+    opacity: 0.9;
+}
+
+/* Gaya untuk deskripsi password yang diminta */
+#login-view .login-desc {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #bdc3c7; 
+    font-style: italic;
+}
+
+/* --- Tampilan Utama --- */
+#main-view {
+    display: none; /* Awalnya tersembunyi */
+    width: 100%;
+    max-width: 440px;
+    /* Hapus properti pemusatan dari sini, biar body yang menanganinya */
+}
+
+.container {
+    position: relative;
+    z-index: 10;
+    background-color: var(--light-gray-bg);
+    padding: 35px 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8), 0 0 15px rgba(142, 68, 173, 0.3);
+    max-width: 480px;
+    width: 90%;
+    border: 1px solid var(--border-color);
+    /* NILAI MARGIN LAMA: margin-top: 100px; */
+    margin-top: 20px; /* Sesuaikan agar tidak terlalu jauh dari atas */
+    margin-bottom: 20px;
+}
+
+/* Menu Header (Fixed di atas) */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 95%;
+    max-width: 400px;
+    background-color: var(--menu-bg);
+    z-index: 1000;
+    display: none; /* Awalnya disembunyikan */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 10px 10px;
+}
+
+.fixed-header h1 {
+    font-size: 1.2em;
+    color: var(--whatsapp-green);
+    margin: 0;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: var(--accent-purple);
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.menu-toggle:hover {
+    color: var(--whatsapp-green);
+}
+
+/* Dropdown Menu */
+#menuContainer { 
+    position: fixed; 
+    top: 50px; 
+    right: 10px;
+    width: auto;
+    min-width: 200px;
+    background-color: var(--menu-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    padding: 10px;
+    display: none;
+}
+
+/* Combo Button Hijau-Ungu Keren */
+.menu-button-new {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--text-color);
+    background: var(--dark-gradient);
+    transition: opacity 0.2s, transform 0.2s;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.menu-button-new:hover {
+    opacity: 0.8;
+    transform: scale(0.99);
+}
+
+.menu-button-new i {
+    margin-right: 8px;
+}
+
+/* --- Konten Utama (Input Form) --- */
+.header-content {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.icon-area {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.main-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-purple);
+    box-shadow: 0 0 15px rgba(142, 68, 173, 0.5);
+    background-color: var(--input-bg);
+    padding: 5px;
+}
+
+.check-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: red;
+    color: var(--dark-gray);
+    border-radius: 50%;
+    padding: 6px;
+    font-size: 17px;
+    line-height: 1;
+}
+
+.title {
+    color: var(--whatsapp-green);
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* Input dan Select (Dropdown) Styling */
+.input-group label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    color: var(--text-color);
+}
+
+.input-text, .input-select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.input-text:focus, .input-select:focus {
+    border-color: var(--accent-purple);
+    box-shadow: 0 0 8px rgba(142, 68, 173, 0.6);
+    outline: none;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper::after {
+    content: "\f078";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: var(--whatsapp-green);
+    pointer-events: none;
+}
+
+.input-select option {
+    background-color: var(--input-bg);
+    color: var(--text-color);
+}
+
+/* Kirim Banding Button */
+#btnSend {
+    width: 100%;
+    padding: 14px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: var(--text-color);
+    background: var(--gradient);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#btnSend.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(142, 68, 173, 0.5);
+}
+
+#btnSend.active:hover {
+    opacity: 0.9;
+    transform: translateY(0);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* --- Modal Produk --- */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: var(--light-gray-bg);
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 90%;
+    width: 400px; 
+    box-shadow: 0 0 50px rgba(142, 68, 173, 0.7);
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+    border: 2px solid var(--accent-purple);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--whatsapp-green);
+}
+
+.modal-header h2 {
+    margin: 0;
+    color: var(--whatsapp-green);
+    font-size: 1.5em;
+    text-shadow: 0 0 5px rgba(37, 211, 102, 0.5);
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: var(--accent-purple);
+    font-size: 28px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-button:hover {
+    color: var(--text-color);
+}
+
+/* Item Produk */
+.product-item {
+    background: var(--input-bg);
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s;
+}
+
+.product-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.product-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid var(--whatsapp-green);
+}
+
+.product-details {
+    flex-grow: 1;
+}
+
+.product-name {
+    font-weight: 700;
+    color: gold;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+/* Style Harga Keren: Putih dengan Stroke Hitam */
+.product-price {
+    font-weight: 900;
+    font-size: 1.2em;
+    color: white;
+    
+}
+
+/* Tombol BUY */
+.buy-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    color: var(--text-color);
+    background: var(--dark-gradient);
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.2s;
+    text-transform: uppercase;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.buy-button:hover {
+    opacity: 0.8;
+    transform: scale(0.98);
+}
